@@ -1,0 +1,122 @@
+{
+  "groups": [
+    {
+      "id": "1",
+      "name": "Friends"
+    },
+    {
+      "id": "2",
+      "name": "Colleagues"
+    },
+    {
+      "id": "3",
+      "name": "Social"
+    },
+    {
+      "id": "4",
+      "name": "Family"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "imageUrl": "https://example.com/image1.jpg",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "company": "Example Corp",
+      "title": "Software Engineer",
+      "groupId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "imageUrl": "https://example.com/image2.jpg",
+      "email": "jane.smith@example.com",
+      "phone": "+1234567891",
+      "company": "Tech Solutions",
+      "title": "Project Manager",
+      "groupId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Emily Johnson",
+      "imageUrl": "https://example.com/image3.jpg",
+      "email": "emily.johnson@example.com",
+      "phone": "+1234567892",
+      "company": "Innovate Inc",
+      "title": "Designer",
+      "groupId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Michael Brown",
+      "imageUrl": "https://example.com/image4.jpg",
+      "email": "michael.brown@example.com",
+      "phone": "+1234567893",
+      "company": "Creative Works",
+      "title": "Developer",
+      "groupId": "1"
+    },
+    {
+      "id": "5",
+      "name": "Sarah Davis",
+      "imageUrl": "https://example.com/image5.jpg",
+      "email": "sarah.davis@example.com",
+      "phone": "+1234567894",
+      "company": "Design Studio",
+      "title": "Architect",
+      "groupId": "4"
+    },
+    {
+      "id": "6",
+      "name": "David Wilson",
+      "imageUrl": "https://example.com/image6.jpg",
+      "email": "david.wilson@example.com",
+      "phone": "+1234567895",
+      "company": "BuildIt",
+      "title": "Engineer",
+      "groupId": "2"
+    },
+    {
+      "id": "7",
+      "name": "Laura Moore",
+      "imageUrl": "https://example.com/image7.jpg",
+      "email": "laura.moore@example.com",
+      "phone": "+1234567896",
+      "company": "Techies",
+      "title": "CTO",
+      "groupId": "3"
+    },
+    {
+      "id": "8",
+      "name": "Chris Taylor",
+      "imageUrl": "https://example.com/image8.jpg",
+      "email": "chris.taylor@example.com",
+      "phone": "+1234567897",
+      "company": "NextGen",
+      "title": "CEO",
+      "groupId": "4"
+    },
+    {
+      "id": "9",
+      "name": "Jessica Anderson",
+      "imageUrl": "https://example.com/image9.jpg",
+      "email": "jessica.anderson@example.com",
+      "phone": "+1234567898",
+      "company": "FutureTech",
+      "title": "Product Manager",
+      "groupId": "1"
+    },
+    {
+      "id": "10",
+      "name": "Daniel Thomas",
+      "imageUrl": "https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg",
+      "email": "daniel.thomas@example.com",
+      "phone": "+1234567899",
+      "company": "SkyHigh",
+      "title": "Pilot",
+      "groupId": "2"
+    }
+  ]
+}

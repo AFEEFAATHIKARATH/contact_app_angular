@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>
+        Online Contact Application
+        <a class="btn btn-success ms-5" routerLink="add-contact">
+          <i class="fa-solid fa-user-plus me-2">&nbsp; Add New </i>
+        </a>
+      </h1>
+      <p>{{ loginDetails | date:'short' }}</p>
+      <p style="text-align: justify">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+        laudantium neque veniam ea nulla adipisci eligendi odit facere
+        temporibus non modi repellat incidunt in, assumenda fugit, autem rerum?
+        Maiores, quasi!
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" [(ngModel)]="searchKey" class="form-control" placeholder="Search contacts here">
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 mb-3" *ngFor="let contact of allContacts | filter:searchKey:'name'">
+      <div class="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+              <img class="contact_image" [src]="contact.imageUrl" alt="contact image">
+            </div>
+            <div class="col-md-7">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Name: <span class="fw-bolder">{{ contact.name }}</span>
+                </li>
+                <li class="list-group-item">
+                  Mobile: <span class="fw-bolder">{{ contact.phone }}</span>
+                </li>
+                <li class="list-group-item">
+                  Email: <span class="fw-bolder">{{ contact.email }}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-1 d-flex flex-column justify-content-center align-items-center">
+              <!-- actions -->
+              <!-- view -->
+              <a [routerLink]="['/view-contact', contact.id]" class="btn btn-success mb-1">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <!-- edit -->
+              <a [routerLink]="['/edit-contact', contact.id]" class="btn btn-warning mb-1">
+                <i class="fa-solid fa-pen"></i>
+              </a>
+              <!-- delete -->
+              <a [routerLink]="['/delete-contact', contact.id]" class="btn btn-danger">
+                <i class="fa-solid fa-trash"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="container mt-1">
+  <div class="row">
+    <div class="col">
+      <h1><i class="fa-solid fa-user-plus"></i> Add New Contact</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-2 mb-5">
+  <div class="row">
+    <div class="col-md-6">
+      <form class="border p-3">
+        <div class="mb-2">
+          <input
+            name="id"
+            [(ngModel)]="contact.id"
+            placeholder="Contact Id"
+            type="text"
+            class="form-control"
+            required=""
+          />
+ 
+        </div>
+       
+        <div class="mb-2">
+          <input
+            name="name"
+            [(ngModel)]="contact.name"
+            placeholder="Name"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            name="imageUrl"
+            [(ngModel)]="contact.imageUrl"
+            placeholder="Image Url"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            name="email"
+            [(ngModel)]="contact.email"
+            placeholder="Email"
+            type="email"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            name="phone"
+            [(ngModel)]="contact.phone"
+            placeholder="Phone"
+            type="tel"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            name="company"
+            [(ngModel)]="contact.company"
+            placeholder="Company "
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            name="title"
+            [(ngModel)]="contact.title"
+            placeholder="Title"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <select
+            name="groupId"
+            [(ngModel)]="contact.groupId"
+            id=""
+            class="form-control"
+          >
+            <option selected hidden disabled>{{ contact.groupId }}</option>
+            <option [value]="group.id" *ngFor="let group of groups">
+              {{ group.name }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <input value="Create" type="button" class="btn btn-success" />
+          <a class="btn btn-warning ms-5" routerLink="">Close</a>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img class="contact_image" [src]="contact.imageUrl" alt="contact image" />
+    </div>
+  </div>
+</div>
